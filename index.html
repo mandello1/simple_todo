@@ -1,0 +1,49 @@
+<!--
+    My intention is to creat a simple to-do list using JS.
+    I also want the browser to remember my list 
+    in this project 
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <script src="./script.js"></script>
+    <style>
+        *{
+            text-align: center;
+        }
+
+        li{
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+<!-- this div is for information input -->
+    <div id="informationBox">
+        <h1>Welcome to Todovis!</h1>
+        <h1>Insert your task below:</h1>
+        <input type="text" name="" id="taskInput" placeholder="Write your task">
+        <button onclick="saveTask()">Add Task</button>
+        <!-- the print button has almost no use, but if you reload the page it can print the things already saved-->
+        <button id="printButton" onclick="printList()">Print List</button>
+        <button id="deleteButton" onclick="del()">Delete</button>
+    </div>
+<!-- this div is for todo list output-->
+    <div id="todoBox">
+        <ol id=printedList>
+
+        </ol>
+    </div>
+
+</body>
+</html>
